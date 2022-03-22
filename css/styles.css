@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/img/imgFondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-temp {
+  width: auto;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.19);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+}
+.contenedor-tiempo input {
+  border: 0;
+  outline: none;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.contenedor-btn{
+  width: 100%;
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor-btn button{
+  margin: 0 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+}
+.contenedor-btn button:active{
+  transform: scale(1.1);
+}
+.contenedor-cuenta {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0 auto;
+  font-weight: bold;
+}
+.temp {
+  font-weight: bold;
+  font-size: 20px;
+}
+.error {
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  color: rgba(116, 6, 6, 0.849);
+  font-weight: bold;
+}
+.modal-fin-temp {
+  width: 530px;
+  height: 353px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #000;
+  color: antiquewhite;
+  padding: 30px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.modal-fin-temp button {
+  outline: none;
+  border: 1px solid antiquewhite;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.modal-fin-temp button:active {
+  transform: scale(1.1);
+}
+.desactivar {
+  display: none;
+}
+@media screen and (max-width: 700px){
+  .contenedor-tiempo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor-btn{
+    width: 100%;
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-fin-temp{
+    width: 260px;
+    height: 630px;
+    text-align: center;
+  }
+  .temp{
+    color: white;
+  }
+}
